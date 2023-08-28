@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(to left, #1FA0FF,#12DAFB,#7df9b3);
+}
+.wrapper{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.wrapper h2{
+    position: relative;
+    bottom: 7vmin;
+    left: 20vmin;
+    font-size: 2.5em;
+    color: #416b9b;
+}
+.container{
+    width:70vmin;
+    height:70vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 2vmin;
+}
+.play:hover{
+    background-color: #a4dee7fe;
+}
+.play{
+    background: white;
+    height: 20vmin;
+    width: 20vmin;
+    border: none;
+    border-radius: 9px;
+    font-size: 14vmin;
+    color: #08c0dd;
+    box-shadow: 0 0 10px rgb(7, 173, 198);
+    cursor: pointer;
+}
+#restart{
+    margin: 1vmin auto 0 auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(38, 166, 208);
+    color: white;
+    position: relative;
+    top: 2vmin;
+    cursor: pointer;
+}
+.popup{
+    background: linear-gradient(to left, #1FA0FF,#12DAFB,#7df9b3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    font-size: 9vmin;
+}
+#message{
+    color: rgb(7, 7, 52);;
+
+}
+#new-game{
+    border: none;
+    padding: 9px 9px;
+    font-size: 0.6em;
+    background-color: #1FA0FF;
+    color: rgb(7, 7, 52);
+    border-radius: 0.2em;
+}
+.popup{
+    display: none;
+}
